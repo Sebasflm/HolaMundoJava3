@@ -5,6 +5,18 @@ public class Auto {
     String marca;
     Motor motor;
     Duenio duenio;
+    int numRuedas;
+    public Auto(){
+
+    }
+    public Auto(String placa, String modelo, String marca, Motor motor, Duenio duenio, int numRuedas){
+    this.placa=placa;
+    this.modelo=modelo;
+    this.marca=marca;
+    this.motor=motor;
+    this.duenio=duenio;
+    this.numRuedas=numRuedas;
+    }
     double velocidad(int a){
     double velocidadKmh=0;
     switch(a){
