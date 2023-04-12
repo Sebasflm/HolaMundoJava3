@@ -12,6 +12,10 @@ public class Motor {
         this.tipoCombustible = tipoCombustible;
     }
 
+    public Motor(String serie) {
+        this.serie = serie;
+    }
+
     double torque(){
         double torqueNm=0;
         if(tipoCombustible.equals("gasolina")){
